@@ -1,0 +1,350 @@
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor"
+    android:padding="8dp">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--heading-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chap7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Chapter 7: Packages, Crates, Modules"
+                android:textColor="@color/teal_700"
+                android:textSize="28sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q1"
+                android:layout_marginTop="20dp"
+                android:text="1. A pakage must contain :"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:textSize="22sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q1o1"
+                android:buttonTint="@color/white"
+                android:text=" At least one create"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" No create file "
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q1o2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--2mcq-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q2"
+                android:text="2. Which of the given option is a Binnary create: "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="src/main.rs"
+                android:id="@+id/C7Q2o1"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q2o2"
+                android:text="src/lib.rs"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q3"
+                android:fontFamily="serif"
+                android:text="3. Which create is used to generate random numbers: "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" rand"
+                android:id="@+id/C7Q3o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Random"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q3o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q4"
+                android:fontFamily="serif"
+                android:text="4. What is the work of use key word: "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When using create 'use' word is used "
+                android:id="@+id/C7Q4o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brings a path into scope"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q4o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q5"
+                android:fontFamily="serif"
+                android:text="5. Modules let us organize code into :"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creates "
+                android:id="@+id/C7Q5o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groups"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q5o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q6"
+                android:fontFamily="serif"
+                android:text="6. Which one is known as create root: "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="main.rs "
+                android:id="@+id/C7Q6o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargo/toml"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q6o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q7"
+                android:fontFamily="serif"
+                android:text="7. Structure of a create is like : "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graph "
+                android:id="@+id/C7Q7o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tree"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q7o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q8"
+                android:fontFamily="serif"
+                android:text="8. 'as' key word is used : "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When using one variable to check other variable"
+                android:id="@+id/C7Q8o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renaming a type  in one scope"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q8o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q9"
+                android:fontFamily="serif"
+                android:text="9. Which of the given is agolbal operator : "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * "
+                android:id="@+id/C7Q9o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q9o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C7Q10"
+                android:fontFamily="serif"
+                android:text="10. Which keyword is used to make variables Public : "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pub "
+                android:id="@+id/C7Q10o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" pub"
+                android:buttonTint="@color/white"
+                android:id="@+id/C7Q10o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <!--btn-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <!--btn-->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/C7Fbtn"
+                    android:layout_marginStart="23dp"
+                    android:text="Finish"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/C7btn"
+                    android:text="Next"
+                    android:layout_marginStart="162dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

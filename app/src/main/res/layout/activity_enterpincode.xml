@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/signup"
+        android:paddingTop="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"
+        android:textSize="55sp"
+        android:fontFamily="cursive"
+        android:text="Enter Pin Code"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_below="@id/signup"
+        android:id="@+id/loginbox"
+        android:layout_width="250dp"
+        android:layout_height="440dp"
+        android:background="@drawable/gradient1"
+        tools:ignore="MissingConstraints"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/signup">
+
+
+        <ImageView
+            android:layout_width="327dp"
+            android:layout_height="360dp"
+            android:elevation="20dp"
+            android:id="@+id/wshadowbox"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/white1"
+            tools:ignore="MissingConstraints"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginStart="53dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Check Your Phone"
+                android:id="@+id/ecode"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="31sp"
+                android:gravity="center" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/ecode"
+                android:textColor="@color/black"
+                android:text="@string/Vtext"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:id="@+id/codeLayout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="180dp"
+                android:layout_marginStart="5dp">
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/digit1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:backgroundTint="@color/black"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textAlignment="center" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/digit2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textAlignment="center" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/digit3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/black"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/digit4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:inputType="phone"
+                    android:imeOptions="actionDone"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:gravity="center"
+                >
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="@string/verify"
+                    android:id="@+id/verifybtn"
+                    android:layout_gravity="center"
+                    android:textAllCaps="true"
+                    android:backgroundTint="@color/teal_200"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="2dp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mainpage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mainpage">
+        <activity android:name=".forgotpassword"></activity>
+        <activity android:name=".enterpincode" />
+        <activity android:name=".gdashboard" />
+        <activity android:name=".passwordupdated" />
+        <activity android:name=".book" />
+        <activity android:name=".chpt10" />
+        <activity android:name=".chpt9" />
+        <activity android:name=".chpt8" />
+        <activity android:name=".chpt7" />
+        <activity android:name=".chpt6" />
+        <activity android:name=".chpt5" />
+        <activity android:name=".chpt4" />
+        <activity android:name=".chpt3" />
+        <activity android:name=".chpt2" />
+        <activity android:name=".chpt1" />
+        <activity android:name=".attemptquiz" />
+        <activity android:name=".profile" />
+        <activity android:name=".uploads" />
+        <activity android:name=".compiler" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".singup" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

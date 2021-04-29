@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/login"
+        android:paddingTop="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"
+        android:textSize="55sp"
+        android:fontFamily="cursive"
+        android:text="LogIn"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_below="@id/login"
+        android:id="@+id/loginbox"
+        android:layout_width="250dp"
+        android:layout_height="490dp"
+        android:background="@drawable/gradient1"
+        tools:ignore="MissingConstraints"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/login">
+
+
+        <ImageView
+            android:layout_width="327dp"
+            android:layout_height="420dp"
+            android:elevation="20dp"
+            android:id="@+id/wshadowbox"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/white1"
+            tools:ignore="MissingConstraints"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginStart="29dp"
+        >
+
+        <!--User name-->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                android:hint="@string/UserName"
+                app:helperText="Please Enter Username"
+                app:startIconDrawable="@drawable/ic_baseline_credit_card"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--password-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Password"
+                android:layout_marginTop="6dp"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                android:layout_below="@id/username"
+                app:passwordToggleEnabled="true"
+                app:helperText="Enter Your Password"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:startIconDrawable="@drawable/ic_baseline_vpn_key"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:id="@+id/twobtn"
+                android:layout_below="@id/password"
+                android:orientation="horizontal">
+
+
+                <!--floating action btn login-->
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/loginbtn"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:text="@string/LogIn"
+                    />
+                <!--Take this icon to left-->
+                <!--  </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+                <!--floating action Guest btn-->
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/guest_btn"
+                    android:layout_width="110dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/Guest"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twobtn"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                >
+                <!--forget password-->
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/forgotpass"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:textColor="@color/white"
+                    android:text="@string/forgotpass"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_below="@id/forgotpass">
+
+                    <!--or -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/or"
+                        android:text="@string/OR"
+                        android:textSize="23sp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        />
+                    <!--create new account-->
+                    <Button
+                        android:id="@+id/createnewA"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:text="@string/Create_new_account"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:textColor="@color/teal_200"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="1dp"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

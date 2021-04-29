@@ -1,0 +1,254 @@
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor"
+    android:padding="8dp">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--heading-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chap10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Chapter 10: Generic, Traits, Lifetime"
+                android:textColor="@color/teal_700"
+                android:textSize="28sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q1"
+                android:layout_marginTop="20dp"
+                android:text="1. We use generics to create definitions for items like: "
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:textSize="22sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q1o1"
+                android:buttonTint="@color/white"
+                android:text="  function signatures or structs"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" loops and functions"
+                android:buttonTint="@color/white"
+                android:id="@+id/C10Q1o2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--2mcq-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q2"
+                android:text="2. std::cmp::PartialOrd, this is a trait: "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text=" True"
+                android:id="@+id/C10Q2o1"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q2o2"
+                android:text=" Flase"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q3"
+                android:fontFamily="serif"
+                android:text="3.  we can define enums to hold generic data types in their variants by: "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" enum Option"
+                android:id="@+id/C10Q3o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" enum "
+                android:buttonTint="@color/white"
+                android:id="@+id/C10Q3o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q4"
+                android:fontFamily="serif"
+                android:text="4. 'impl'  keyword is used for : "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Appliying implementation box"
+                android:id="@+id/C10Q4o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implementing value on a variable"
+                android:buttonTint="@color/white"
+                android:id="@+id/C10Q4o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q5"
+                android:fontFamily="serif"
+                android:text="5. Which variable is a point struct :"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p2 "
+                android:id="@+id/C10Q5o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P2 "
+                android:buttonTint="@color/white"
+                android:id="@+id/C10Q5o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q6"
+                android:fontFamily="serif"
+                android:text="6. Which create we need to implement another create  "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Pub"
+                android:id="@+id/C10Q6o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pub"
+                android:buttonTint="@color/white"
+                android:id="@+id/C10Q6o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C10Q7"
+                android:fontFamily="serif"
+                android:text="7. Lifetime is: "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lifetime has a scope that which that reference is valid"
+                android:id="@+id/C10Q7o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lifetime decides that which value to assign to which value"
+                android:buttonTint="@color/white"
+                android:id="@+id/C10Q7o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <!--btn--><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <!--btn-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/C10Fbtn"
+                android:layout_marginStart="23dp"
+                android:text="Finish"
+                />
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

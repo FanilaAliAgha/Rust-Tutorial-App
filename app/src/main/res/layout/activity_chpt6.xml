@@ -1,0 +1,204 @@
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor"
+    android:padding="8dp">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--heading-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chap6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Chapter 6 : Enums and Pattern Matching"
+                android:textColor="@color/teal_700"
+                android:textSize="28sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q1"
+                android:layout_marginTop="20dp"
+                android:text="1. To create a hashMap, which of the portions of standard library are imported in the program?"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:textSize="22sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q1o1"
+                android:buttonTint="@color/white"
+                android:text="  use std::collections::HashMap;"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" use std::HashMap::collections;"
+                android:buttonTint="@color/white"
+                android:id="@+id/C6Q1o2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--2mcq-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q2"
+                android:text="2.  HashMap stores String type as a keys, and i23 as values: "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="False"
+                android:id="@+id/C6Q2o1"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q2o2"
+                android:text="True"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q3"
+                android:fontFamily="serif"
+                android:text="3.  Select only true statements from following:   "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Enum variant can have struct-like data "
+                android:id="@+id/C6Q3o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Enum variant can have field-like data"
+                android:buttonTint="@color/white"
+                android:id="@+id/C6Q3o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q4"
+                android:fontFamily="serif"
+                android:text="4.  Select only true statements from following:   "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  enum is a algebraic data types "
+                android:id="@+id/C6Q4o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" enum always has variants"
+                android:buttonTint="@color/white"
+                android:id="@+id/C6Q4o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C6Q5"
+                android:fontFamily="serif"
+                android:text="5. Standard library of option 'T' helps the system to prevent errors: "
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" True"
+                android:id="@+id/C6Q5o1"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" False"
+                android:buttonTint="@color/white"
+                android:id="@+id/C6Q5o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <!--btn-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <!--btn-->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/C6Fbtn"
+                    android:layout_marginStart="23dp"
+                    android:text="Finish"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/C6btn"
+                    android:text="Next"
+                    android:layout_marginStart="162dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

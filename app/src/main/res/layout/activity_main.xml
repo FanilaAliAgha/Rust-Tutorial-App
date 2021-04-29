@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:id="@+id/loginbox"
+        android:layout_width="200dp"
+        android:layout_height="390dp"
+        android:background="@drawable/gradient1"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/logrightbox"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="220dp"
+        android:layout_width="200dp"
+        android:layout_height="390dp"
+        android:background="@drawable/gradient2"
+        tools:ignore="MissingConstraints"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        >
+
+
+        <ImageView
+            android:layout_width="327dp"
+            android:layout_height="360dp"
+            android:elevation="20dp"
+            android:id="@+id/wshadowbox"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/white1"
+            tools:ignore="MissingConstraints"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/Rlogo"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="110dp"
+        android:src="@mipmap/rustlogo_foreground">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rust"
+        android:id="@+id/rust"
+        android:layout_marginStart="90dp"
+        android:textAllCaps="true"
+        android:textSize="90sp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="serif"
+        android:textColor="@color/black">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/btnnext"
+        android:text="next"
+        android:layout_below="@id/rust"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="165dp"/>
+
+
+
+</RelativeLayout>
+
+

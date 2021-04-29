@@ -1,0 +1,152 @@
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor"
+    android:padding="8dp">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--heading-->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chap1"
+                android:text="Chapter1: Introduction To Rust"
+                android:fontFamily="serif"
+                android:textSize="28sp"
+                android:textColor="@color/teal_700"
+                android:gravity="center"/>
+
+            <!--mcq-1-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/C1Q1"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:text="1. Rust uses which print macro:"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:id="@+id/C1Q1o1"
+                android:text="Println!"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/C1Q1o2"
+                android:text="Printf"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <!--mcq-2-->
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C1Q2"
+                android:fontFamily="serif"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:text="2.To check the version of Rust we use:"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:id="@+id/C1Q2o1"
+                android:textColor="@color/white"
+                android:text="cargo-- Version"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/C1Q2o2"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:text="cargo --version"
+                android:textSize="20sp"/>
+
+            <!--mcq-3-->
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C1Q3"
+                android:fontFamily="serif"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:text="3.Println! is a:"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:id="@+id/C1Q3o1"
+                android:text="Macro"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/C1Q3o2"
+                android:text="function"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp">
+            <!--btn-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/C1Fbtn"
+                android:layout_marginStart="23dp"
+                android:text="Finish"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/C1btn"
+                android:text="Next"
+                android:layout_marginStart="162dp"/>
+
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

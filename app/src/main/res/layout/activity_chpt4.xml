@@ -1,0 +1,200 @@
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor"
+    android:padding="8dp">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--heading-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chap4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Chapter 4 : Understanding Ownership "
+                android:textColor="@color/teal_700"
+                android:textSize="28sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q1"
+                android:layout_marginTop="20dp"
+                android:text="1. Using serial communication protocol we can communicate with multiple devices:"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:textSize="22sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q1o1"
+                android:text="False"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" True"
+                android:buttonTint="@color/white"
+                android:id="@+id/C4Q1o2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--2mcq-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q2"
+                android:text="2. I2C protocol uses model:"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="Master Slave"
+                android:id="@+id/C4Q2o1"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q2o2"
+                android:buttonTint="@color/white"
+                android:text="Slave Master"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q3"
+                android:fontFamily="serif"
+                android:text="3.All data stored on the stack must have a known:"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fixed Size"
+                android:buttonTint="@color/white"
+                android:id="@+id/C4Q3o1"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unfixed Size"
+                android:buttonTint="@color/white"
+                android:id="@+id/C4Q3o2"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <!--mcq4-->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:id="@+id/C4Q4"
+                android:text="4. The double colon (::) is an operator that allows us to"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="namespace"
+                android:buttonTint="@color/white"
+                android:id="@+id/C4Q4o1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numberspace"
+                android:id="@+id/C4Q4o2"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Program that keeps track and cleans up memory that isn’t being used anymore goes in:"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:id="@+id/C4Q5"
+                android:fontFamily="serif"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q5o1"
+                android:text="Garbage Collector"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/C4Q5o2"
+                android:buttonTint="@color/white"
+                android:text="bin"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <!--btn-->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/C4Fbtn"
+                    android:layout_marginStart="23dp"
+                    android:text="Finish"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/C4btn"
+                    android:text="Next"
+                    android:layout_marginStart="162dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

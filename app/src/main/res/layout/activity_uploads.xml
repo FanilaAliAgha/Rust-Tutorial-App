@@ -1,0 +1,427 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/rectangle"
+        android:background="@color/backcolor"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/uheading"
+        android:fontFamily="serif"
+        android:textSize="45sp"
+        android:text="Uploads"
+        android:paddingStart="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"/>
+    <!-- A CardView that contains a TextView -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/uheading"
+        android:layout_marginTop="20dp"
+        android:layout_height="1500dp"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="390dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/uheading"
+
+        >
+        <!--card1-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="195dp"
+            android:id="@+id/ucard1"
+            card_view:cardElevation="15dp"
+            android:layout_marginStart="40dp"
+            android:elevation="20dp"
+            card_view:cardCornerRadius="15dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title1"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/secondary_text"
+                    android:fontFamily="serif"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/code"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <!--card2-->
+        <!--card1-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="195dp"
+            android:id="@+id/ucard2"
+            card_view:cardElevation="15dp"
+            android:layout_marginStart="225dp"
+            android:elevation="20dp"
+            card_view:cardCornerRadius="15dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title2"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/secondary_text"
+                    android:fontFamily="serif"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/code"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+<!--card3-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="195dp"
+            android:id="@+id/ucard3"
+            card_view:cardElevation="15dp"
+            android:layout_marginStart="40dp"
+            android:elevation="20dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="15dp"
+            android:clickable="true"
+            android:layout_below="@id/ucard1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title3"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sec3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/secondary_text"
+                    android:fontFamily="serif"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/code"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--card3-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="195dp"
+            android:id="@+id/ucard4"
+            card_view:cardElevation="15dp"
+            android:layout_marginStart="225dp"
+            android:elevation="20dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="15dp"
+            android:clickable="true"
+            android:layout_below="@id/ucard1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title4"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sec4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/secondary_text"
+                    android:fontFamily="serif"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/code"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!--card4-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="195dp"
+            android:id="@+id/ucard5"
+            card_view:cardElevation="15dp"
+            android:layout_marginStart="40dp"
+            android:elevation="20dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="15dp"
+            android:clickable="true"
+            android:layout_below="@id/ucard3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title5"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sec5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/secondary_text"
+                    android:fontFamily="serif"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/code"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <!--card6-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="144dp"
+            android:layout_height="195dp"
+            android:id="@+id/ucard6"
+            card_view:cardElevation="15dp"
+            android:layout_marginStart="225dp"
+            android:elevation="20dp"
+            android:layout_marginTop="20dp"
+            card_view:cardCornerRadius="15dp"
+            android:clickable="true"
+            android:layout_below="@id/ucard3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title6"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sec6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:text="@string/secondary_text"
+                    android:fontFamily="serif"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/code"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/ucard6"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/ucard6"
+            android:src="@drawable/ic_baseline_add_fab"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>
